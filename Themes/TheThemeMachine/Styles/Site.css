@@ -1,0 +1,109 @@
+﻿@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html, body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 4em 1em;
+    padding-top: 0;
+}
+
+div#layout-main, div#layout-navigation, div#layout-footer {
+    margin: 0 auto;
+    max-width: 50em;
+    padding-top: 1em;
+}
+
+div#layout-navigation ul {
+    padding-left: 0;
+}
+
+div#layout-navigation ul > li {
+    display: inline;
+    margin-right: 20px;
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1, h2, strong {
+    color: #333;
+}
+
+a {
+    color: #9A1723;
+}
+
+header#layout-header {
+    background-color: #263d36;
+    background-image: url("/Themes/TheThemeMachine/Styles/header.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 18vw 2em;
+    text-align: center;
+    /* enable absolute positioning of h1#branding */
+    position: relative;
+    /* combat body padding */
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
+header#layout-header h1#branding > a {
+    text-transform: uppercase;
+    color: #7FB3DA;
+    font-size: 1.25em;
+    opacity: 0.6;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1;
+}
+
+.credits {
+    float: right;
+}
+
+img {
+    width: 90% !important;
+    padding: 7px;
+    border: 1px inset #9A1723;
+    margin: auto;
+    text-align: center;
+}
+
+@media(min-width:480px) {
+    header#layout-header h1#branding > a {
+        font-size:2em;
+
+    }
+}
+
+@media(min-width:640px) {
+    header#layout-header h1#branding > a {
+        font-size:3em;
+    }
+}
+
+@media(min-width:768px) {
+    header#layout-header h1#branding > a {
+        font-size:3.5em;
+    }
+}
+
+@media(min-width:1280px) {
+    header#layout-header h1#branding > a {
+        font-size:4em;
+    }
+}
